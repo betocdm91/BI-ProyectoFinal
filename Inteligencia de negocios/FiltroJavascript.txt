@@ -1,0 +1,7 @@
+#El siguiente scritp, es un código en javascrit
+#el cual permite filtrar los tweets por ciudad y lenguaje
+
+function(doc) {
+if(doc.place.name=="Quito" && doc.user.lang=="es")
+emit(doc.id, doc.text, doc.label);
+}
